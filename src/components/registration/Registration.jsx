@@ -115,7 +115,7 @@ const Registration = () => {
           <div className="form-part">
           <form id="reg-form">
           <div className="form-name">
-          <div className="form-name-part">
+          <div className="form-name-part parts">
                     <div className="loda common-design"><p>NAME</p></div>
                     <input type="text" id="name" className="common-input" required />
           </div>
@@ -144,7 +144,7 @@ const Registration = () => {
           </div>
           </div>
           <div className="form-contact">
-          <div className="contact-email">
+          <div className="contact-email parts">
                     <label className="emailtext common-design"><p>EMAIL</p></label>
                     <input type="text" id="emailinput" className="common-input" />
           </div>
@@ -173,7 +173,7 @@ const Registration = () => {
           </div>
           </div>
           <div className="form-phone">
-          <div className="contact-phone">
+          <div className="contact-phone parts">
                     <label className="phonetext common-design"><p>PHONE NO.</p></label>
                     <input type="text" id="phoneinput" className="common-input" />
           </div>

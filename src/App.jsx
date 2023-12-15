@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Registration from './components/registration/Registration'
 
+
 function App() {
 
   return (
@@ -9,5 +10,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

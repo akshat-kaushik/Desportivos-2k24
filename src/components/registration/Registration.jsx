@@ -23,7 +23,6 @@ const dropBox = (inputType, data) => {
               x = false;
             }else{
               content.style.display =  "block";
-              inputs.style.zIndex = "1";
               x = !x;
             }
           });
@@ -67,6 +66,7 @@ const dropBox = (inputType, data) => {
             input_options.innerHTML = filteredData;
           });
 }
+
 
 const Registration = () => {
 
@@ -124,7 +124,7 @@ const Registration = () => {
           <div className="form-college-name">
                     <div className="subpart">
                     <label className="collegetext common-design">COLLEGES</label>
-                    <div className='select-inputs'>
+                    <div className='select-inputs' onClick={(e) => handleMove(e)}>
                       <input type='text' className='select-college' id='collegeinput'/>
                             <span className="uil"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71L8.46 9.17a1 1 0 0 0-1.41 0a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z" /></svg></span>
                     </div>

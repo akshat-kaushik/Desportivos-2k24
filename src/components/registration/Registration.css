@@ -125,7 +125,7 @@
         #collegeinput {
           width: 100%;
           height: 40px;
-          padding: 20px;
+          padding: 2px;
         }
         
         .common-input {
@@ -148,7 +148,8 @@
         }
 
         .parts{
-          margin-top: 10px;
+          margin-top: 16px;
+          color: white;
         }
 
         
@@ -205,17 +206,22 @@
         
         .select-inputs{
           display: flex;
-          width:103%;
+          align-items: center;
+          justify-content: center;
+          width:100%;
+          background-color: transparent;
+          border: 3px solid white;
+          border-radius: 5px;
+          height:42px;
         }
+
 
         .uil{
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
-          position: relative;
-          right:24px;
-          z-index: 2;
+
         }
         .female-part {
           display: flex;
@@ -226,6 +232,10 @@
             width: 80%;
             margin: auto;
             margin-top: 100px;
+          }
+
+          #collegeinput{
+            width: 100%;
           }
         
         
@@ -273,10 +283,6 @@
           .common-input {
             width: 100%;
           }
-          #collegeinput {
-            width: 100%;
-          }
-        
           .form-phone {
             display: block;
             width: 100%;
@@ -372,39 +378,22 @@
         }
         
         .select-college{
-          background-color: transparent;
-          border: 3px solid white;
-          border-radius: 5px;
           outline: none;
-          height:36px;
           color:white;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          background: transparent;
         }
         
         .select-state{
           background-color: transparent;
-          border: 3px solid white;
-          border-radius: 5px;
           outline: none;
-          height:36px;
           color:white;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
         }
         
         .select-sport{
           background-color: transparent;
-          border: 3px solid white;
-          border-radius: 5px;
           outline: none;
-          height:36px;
           color:white;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+
         }
         
         .search{
@@ -414,36 +403,6 @@
           align-items: center;
         }
         
-        .college-input{
-          width:85%;
-          outline: none;
-          margin-left: 10px;
-          border: 1px solid black;
-          border-radius: 8px; 
-          color: black;
-          text-indent: 25px;
-        }
-        
-        .sport-input{
-          width:85%;
-          outline: none;
-          margin-left: 10px;
-          border: 1px solid black;
-          border-radius: 8px; 
-          color: black;
-          text-indent: 25px;
-        }
-        
-        
-        .state-input{
-          width:85%;
-          outline: none;
-          margin-left: 10px;
-          border: 1px solid black;
-          border-radius: 8px; 
-          color: black;
-          text-indent: 25px;
-        }
         
         .college-content{
           position: absolute;

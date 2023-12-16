@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow } from 'swiper/modules';
-import './events.css';
+import './events.css';  // Import your custom styles
 import Template from './Template';
 
 const sportsArray = [
@@ -21,18 +21,24 @@ const sportsArray = [
   "Squash",
   "Table Tennis",
   "Tennis",
-  "Volleyball"
+  "Volleyball",
+  "BGMI",
+  "Valorant"
 ];
 
 function Events() {
   return (
-    <div className="relative flex items-center justify-center">
-      <img className="w-full h-full" src="events_back.jpg" alt="" />
-      <img className="absolute bottom-32 left-0 w-full" src="events_ground.png" alt="" />
-      <img className="absolute bottom-1 left-0" src="events__left_rock.png" alt="" />
-      <img className="absolute bottom-1 right-0" src="events__right_rock.png" alt="" />
+    <div className="relative flex items-center justify-center" style={{ backgroundImage: `url('./events_back.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+      <div>
+        <h1>Events</h1>
+      <img className="absolute w-2/3 top-16 left-1/2 -translate-x-1/2 sm:w-1/4" src="board.png" alt="" />
+      </div>
+  
+      <img className="hidden md:block absolute bottom-0 left-0 w-full" src="events_ground.png" alt="" />
+      <img className="absolute -bottom-20 left-0" src="events__left_rock.png" alt="" />
+      <img className="absolute -bottom-20  right-0" src="events__right_rock.png" alt="" />
 
-      <div className="absolute">
+      <div className="pl-2 absolute">
         <Swiper
           effect={'coverflow'}
           grabCursor={true}

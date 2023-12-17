@@ -236,7 +236,9 @@
 
           #collegeinput{
             width: 100%;
+            
           }
+
         
         
           .form-name-part {
@@ -245,6 +247,7 @@
         
           .form-college-name {
             width: 100%;
+            
           }
         
           .contact-email {
@@ -397,7 +400,6 @@
         }
         
         .search{
-        
           display: flex;
           justify-content: center;
           align-items: center;
@@ -407,7 +409,6 @@
         .college-content{
           position: absolute;
           width:80%;
-         display:none;
          margin-top:7px;
          padding:7px;
          background-color: white;
@@ -416,11 +417,10 @@
          height: 300px;
          overflow-y: scroll;
         }
-        
+
         .sport-content{
           position: absolute;
           width:80%;
-          display:none;
           margin-top:7px;
           padding:7px;
           background-color: white;
@@ -431,9 +431,8 @@
         }
         
         .state-content {
-          position: absolute;
-          width:80%;
-         display:none;
+        position: absolute;
+        width: 80%;
          margin-top:7px;
          padding:7px;
          background-color: white;
@@ -443,12 +442,12 @@
          overflow-y: scroll;
         }
         
-        #college-options li{
+        #college-options div{
           margin:15px;
           height:40px;
         }
         
-        .options li{
+        .options div{
           height:35px;
           margin:10px;
           padding:0 13px;
@@ -459,7 +458,7 @@
           font-size: 12px;
         }
         
-        .options li:hover{
+        .options div:hover{
           background-color:#f2f2f2
         }
         

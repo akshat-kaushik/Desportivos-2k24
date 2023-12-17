@@ -8,6 +8,7 @@ import "./index.css";
 import Registration from "./components/registration/Registration";
 import Front from "./Front";
 
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     path: "/registration",
     element: <Registration/>,
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

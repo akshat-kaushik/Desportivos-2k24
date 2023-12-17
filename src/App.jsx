@@ -1,16 +1,14 @@
-import Registration from './components/registration/Registration'
-
+import Cursor from "./components/cursor/Cursor";
 
 
 function App() {
-
   return (
     <>
+      <Cursor />
       <Registration />
-      <Front/>
+      <Front />
     </>
-  )
+  );
 }
 
-
-export default App
+export default App;

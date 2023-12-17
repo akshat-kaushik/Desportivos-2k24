@@ -7,6 +7,11 @@ body::-webkit-scrollbar {
   background: #402C58;
   height: 0px;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #2f1e43;
+}
+
+body {
+  overflow-x: hidden; /* This line should be outside the scrollbar block */
 }

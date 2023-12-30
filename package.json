@@ -21,6 +21,7 @@
     "react-locomotive-scroll": "^0.2.2",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.21.0",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0",

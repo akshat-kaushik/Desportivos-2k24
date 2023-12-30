@@ -24,7 +24,7 @@ function Template({ sportName }) {
           <img src="Sport.png" alt="" />
         </div>
         
-        <div className="absolute left-16 top-28">
+        <div className="absolute left-8 top-16">
           <img className="" src={imageSrc} alt="" />
         </div>
 

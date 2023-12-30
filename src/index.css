@@ -15,3 +15,7 @@ body::-webkit-scrollbar-thumb {
 body {
   overflow-x: hidden; /* This line should be outside the scrollbar block */
 }
+
+.scroll {
+  padding: 0 0 200vh;
+}

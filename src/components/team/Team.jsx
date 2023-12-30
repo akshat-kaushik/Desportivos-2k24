@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Team() {
-
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -21,30 +20,9 @@ function Team() {
               Who is Behind
             </h1>
             <img className="md:w-3/5" src="Desportivos.png" alt="" />
-
             <img className="absolute top-full" src="eventStrike2.png" alt="" />
             <img className="" src="eventStrike3.png" alt="" />
           </div>
-
-         <div className="absolute top-44 sm:top-2/3">
-          <div className="flex justify-around flex-wrap">
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          <img  className="w-72 sm:w-3/12 cursor-pointer transition-transform transform hover:scale-105" src="teamBoard.png" alt="" onClick={openModal} />
-          
-
-
-          </div>
-          
-
-
-         </div>
         </div>
       </div>
 
@@ -55,7 +33,6 @@ function Team() {
         >
           <div className="bg-white p-4 transition-all transform scale-100">
             <h2>Modal Content</h2>
-            
           </div>
         </div>
       )}

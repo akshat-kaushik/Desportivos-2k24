@@ -9,20 +9,17 @@ import Template from "./Template";
 
 const sportsArray = [
   "Badminton",
+  "Futsal",
   "Basketball",
   "Squash",
   "Chess",
   "Cricket",
   "Football",
-  "Futsal",
   "Kabaddi",
   "Powerlifting",
-  "Carrom",
   "Table Tennis",
   "Tennis",
   "Volleyball",
-  "BGMI",
-  "Valorant",
 ];
 
 function Events() {
@@ -89,12 +86,6 @@ function Events() {
           className="absolute inset-x-0 -top-44 h-16"
           style={{
             background: "linear-gradient(black, transparent)",
-          }}
-        />
-        <div
-          className="absolute inset-x-0 -bottom-12 h-16"
-          style={{
-            background: "linear-gradient(transparent, black)",
           }}
         />
       </div>

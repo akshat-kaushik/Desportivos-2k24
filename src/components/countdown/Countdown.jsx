@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef,useLayoutEffect, useEffect, useState } from 'react';
+import {gsap,} from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Countdown() {
   const [day, setDay] = useState(0);
@@ -26,13 +29,32 @@ function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
+  const comp=useRef(null)
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline()
+  
+      tl.from(".title", {
+        x:-1000,
+        delay:2,
+        duration:0.5
+      })
+    }, comp)
+    return () => {
+      ctx.revert()
+    }
+  }, [])
+
+
   return (
     
-      <div className="bg-black h-screen overflow-x-hidden overflow-y-hidden">
-        <div className=" top-20 h-screen w-screen relative ">
-          <h1 className='text-white text-xl pl-20 sm:text-3xl'>SEE YOU THERE IN</h1>
-        <div className="text-white text-xl top-0 absolute pl-3 sm:text-5xl">
-          <div className="flex ">
+      <div className="bg-black h-screen overflow-x-hidden overflow-y-hidden" ref={comp}>
+        <div className=" top-28 sm:top-32 h-screen w-screen relative ">
+        <h1 className='text-white text-xl pl-20 sm:text-3xl title'>SEE YOU THERE IN</h1>
+
+        <div className="text-white text-xl top-0 absolute pl-3 sm:text-6xl">
+          <div className="sm:pl-20 flex ">
             <div className="my-20  p-2">
               <div className="font-bold ml-8 z-10">{formatNumber(day)}</div>
               <div className='text-red-400 z-10'>Days</div>
@@ -52,8 +74,8 @@ function Countdown() {
           </div>
         </div>
 
-        <img className='absolute -right-8 top-28 sm:-right-20' src="rockHero.png" alt="" />
-       
+        <img className='mt-28 absolute -right-8 sm:top-28 sm:-mt-10 sm:-right-20' src="rockHero.png" alt="" />
+             
         
         <img className='absolute hidden sm:-bottom-28 sm:block w-full' src="bottomRock.png" alt="" />
        

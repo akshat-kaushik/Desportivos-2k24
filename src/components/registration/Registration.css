@@ -1,515 +1,494 @@
 @font-face {
-          font-family: "Ethnocentric";
-          font-style: normal;
-          font-weight: normal;
-          src: url("./ethnocentric rg.woff") format("woff");
-        }
-        
-        body {
-          font-family: "Ethnocentric", sans-serif;
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-          user-select:none;
-        }
-        
-        .registration {
-          z-index: 1;
-        }
-        
-        .bgimg {
-          position: fixed;
-          z-index: -1;
-          top: 0px;
-          height: 100%;
-          width: 100%;
-        }
-        
-        .facedesign {
-          height: 200px;
-        }
-        
-        .form-name-part {
-          width: 45%;
-        }
-        
-        .form-college-name {
-          width: 45%;
-        }
-        
-        .contact-email {
-          width: 45%;
-        }
-        
-        .contact-state {
-          width: 45%;
-        }
-        
-        .contact-phone {
-          width: 45%;
-        }
-        
-        .contact-sports {
-          width: 45%;
-        }
-        
-        .face {
-          width: 100%;
-          text-align: end;
-          position:absolute;
-          bottom: 10px;
-        }
-        
-        .symbol {
-          position: absolute;
-          top: 40px;
-          left: 30px;
-          z-index: 2;
-          height: 50px;
-        }
-        
-        .gender-category {
-          margin-top: -20px;
-        }
-        
-        .heading {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          text-align: center;
-          margin-top: 40px;
-          font-size: 60px;
-        }
-        
-        .common-design {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          font-size: 20px;
-          font-weight: 600;
-        }
-        
-        .register-text {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          font-weight: bold;
-          font-size: 16px;
-          padding: 16px;
-        }
-        
-        .register-button button {
-          background-color: #f14b64;
-          border-radius: 20px;
-          width: 30%;
-          transition: background-color 0.3s;
-          color: white;
-        }
-        
-        .register-button button:hover {
-          background-color: black;
-          cursor: pointer;
-          color: white;
-        }
-        
-        
-        .maletext {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          margin-left: 2px;
-        }
-        
-        .femaletext {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          margin-left: 2px;
-        }
-        
-        #collegeinput {
-          width: 100%;
-          height: 40px;
-          padding: 2px;
-        }
-        
-        .common-input {
-          background-color: transparent;
-          border: 3px solid white;
-          border-radius: 5px;
-          width: 100%;
-          padding: 5px;
-          outline: none;
-          height: 40px;
-          padding: 5px;
+  font-family: "Ethnocentric";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./ethnocentric rg.woff") format("woff");
+}
 
-          margin-top: 22px;
-        }
-        
-        .form-part {
-          margin: auto;
-          width: 75%;
-          margin-top: 20px;
-        }
+body {
+  font-family: "Ethnocentric", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  user-select: none;
+}
 
-        .parts{
-          margin-top: 16px;
-          color: white;
-        }
+.registration {
+  z-index: 1;
+}
 
-        
-        .form-name {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        
-        .form-contact {
-          display: flex;
-          justify-content: space-between;
-        }
-        
-        .form-phone {
-          display: flex;
-          justify-content: space-between;
-        }
-        
-        .form-register {
-          display: flex;
-          justify-content: space-between;
-        }
-        
-        .upload-part {
-          width: 45%;
-        }
+.bgimg {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
 
-        .register-button {
-           text-align: center;
-        }
-        
-        .subpart {
-          display: flex;
-          flex-direction: column;
-        }
-        
-        .collegetext {
-          margin-top: 16px;
-          margin-bottom: 22px;
-        }
-        
-        .gender-category {
-          display: flex;
-          width: 25%;
-          justify-content: space-between;
-          margin-top: 25px;
-        }
-        
-        .male-part {
-          display: flex;
-          margin-right: 10px;
-        }
-        
-        .select-inputs{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width:100%;
-          background-color: transparent;
-          border: 3px solid white;
-          border-radius: 5px;
-          height:42px;
-        }
+.facedesign {
+  height: 200px;
+}
 
+.form-name-part {
+  width: 45%;
+}
 
-        .uil{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
+.form-college-name {
+  width: 45%;
+}
 
-        }
-        .female-part {
-          display: flex;
-        }
-        
-        @media screen and (max-width: 1127px) {
-          .form-part {
-            width: 80%;
-            margin: auto;
-            margin-top: 100px;
-          }
+.contact-email {
+  width: 45%;
+}
 
-          #collegeinput{
-            width: 100%;
-            
-          }
+.contact-state {
+  width: 45%;
+}
 
-        
-        
-          .form-name-part {
-            width: 100%;
-          }
-        
-          .form-college-name {
-            width: 100%;
-            
-          }
-        
-          .contact-email {
-            width: 100%;
-          }
-        
-          .contact-state {
-            width: 100%;
-          }
-        
-          .contact-phone {
-            width: 100%;
-          }
-        
-          .contact-sports {
-            width: 100%;
-          }
-        
-          .form-name {
-            display: block;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          .form-contact {
-            display: block;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-        
-          .upload-part {
-            width: 100%;
-          }
-        
-          .common-input {
-            width: 100%;
-          }
-          .form-phone {
-            display: block;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-        
-          .form-register {
-            display: block;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-        
-          .register-button button {
-            width: 100%;
-          }
-          .terms button {
-            width: 100%;
-          }
-        
-          .heading {
-            margin: auto;
-            width: 50%;
-            font-size: 20px;
-            text-align: center;
-          }
-        
-          .register-button button{
-            margin-bottom: 100px;
-          }
-        
-        }
-        
-        @media screen and (max-width: 420px) {
-          .face {
-            display: none;
-          }
-        
-          .symbol {
-            display: none;
-          }
-          .heading{
-            margin-left: 0px;
-          }
-        
-         
-        }
-        
-        @media screen and (max-width: 598px) {
-          .heading {
-            font-size: 15px;
-            margin-top: 40px;
-          }
-        
-          .select-college{
-            font-size: 12px;
-          }
-        
-          .select-sport{
-            font-size: 12px;
-          }
-        
-          .select-state{
-            font-size: 12px;
-          }
-        }
-        
-        input {
-          font-family: "Ethnocentric", sans-serif;
-          color: white;
-          height: 23px;
-        }
-        
-        @media screen and (min-width:1127px) {
-        
-          .college-content{
-            max-width:33%;
-          }
-        
-          .sport-content{
-            max-width:33%;
-          }
-        
-          .state-content{
-            max-width:33%;
-          }
-        }
-        
-        .despoloader1 {
-          height: 100vh;
-          width: 100vw;
-        }
-        
-        .select-college{
-          outline: none;
-          color:white;
-          background: transparent;
-        }
-        
-        .select-state{
-          background-color: transparent;
-          outline: none;
-          color:white;
-        }
-        
-        .select-sport{
-          background-color: transparent;
-          outline: none;
-          color:white;
+.contact-phone {
+  width: 45%;
+}
 
-        }
-        
-        .search{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        
-        
-        .college-content{
-          position: absolute;
-          width:80%;
-         margin-top:7px;
-         padding:7px;
-         background-color: white;
-         border-radius:10px;
-         transition: opacity 0.5s ease-in-out;
-         height: 300px;
-         overflow-y: scroll;
-        }
+.contact-sports {
+  width: 45%;
+}
 
-        .sport-content{
-          position: absolute;
-          width:80%;
-          margin-top:7px;
-          padding:7px;
-          background-color: white;
-          border-radius:10px;
-          transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
-          height: 300px;
-          overflow-y: scroll;
-        }
-        
-        .state-content {
-        position: absolute;
-        width: 80%;
-         margin-top:7px;
-         padding:7px;
-         background-color: white;
-         border-radius:10px;
-         transition: opacity 0.5s ease-in-out;
-         height: 300px;
-         overflow-y: scroll;
-        }
-        
-        #college-options div{
-          margin:15px;
-          height:40px;
-        }
-        
-        .options div{
-          height:35px;
-          margin:10px;
-          padding:0 13px;
-          border-radius:5px;
-          display:flex;
-          cursor:pointer;
-          align-items:center;
-          font-size: 12px;
-        }
-        
-        .options div:hover{
-          background-color:#f2f2f2
-        }
-        
-        
-        
-        .college-content::-webkit-scrollbar{
-          width: 7px;
-        }
-        .college-content::-webkit-scrollbar-track{
-          background: #f1f1f1;
-          border-radius: 25px;
-        }
-        .college-content::-webkit-scrollbar-thumb{
-          background: #ccc;
-          border-radius: 25px;
-        }
-        .college-content::-webkit-scrollbar-thumb:hover{
-          background: #b3b3b3;
-        }
-        
-        .sport-content::-webkit-scrollbar{
-          width: 7px;
-        }
-        .sport-content::-webkit-scrollbar-track{
-          background: #f1f1f1;
-          border-radius: 25px;
-        }
-        .sport-content::-webkit-scrollbar-thumb{
-          background: #ccc;
-          border-radius: 25px;
-        }
-        .sport-content::-webkit-scrollbar-thumb:hover{
-          background: #b3b3b3;
-        }
-        
-        
-        .state-content::-webkit-scrollbar{
-          width: 7px;
-        }
-        .state-content::-webkit-scrollbar-track{
-          background: #f1f1f1;
-          border-radius: 25px;
-        }
-        .state-content::-webkit-scrollbar-thumb{
-          background: #ccc;
-          border-radius: 25px;
-        }
-        .state-content::-webkit-scrollbar-thumb:hover{
-          background: #b3b3b3;
-        }
-        
-        
-        
-        
+.face {
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  bottom: 10px;
+}
+
+.symbol {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 2;
+  height: 50px;
+}
+
+.gender-category {
+  margin-top: -20px;
+}
+
+.heading {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+.common-design {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.register-text {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.register-button button {
+  background-color: #f14b64;
+  border-radius: 20px;
+  width: 30%;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.register-button button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.maletext {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  margin-left: 2px;
+}
+
+.femaletext {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  margin-left: 2px;
+}
+
+#collegeinput {
+  width: 100%;
+  height: 40px;
+  padding: 2px;
+}
+
+.common-input {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  height: 40px;
+  padding: 5px;
+
+  margin-top: 22px;
+}
+
+.form-part {
+  margin: auto;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.parts {
+  margin-top: 16px;
+  color: white;
+}
+
+.form-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-part {
+  width: 45%;
+}
+
+.register-button {
+  text-align: center;
+}
+
+.subpart {
+  display: flex;
+  flex-direction: column;
+}
+
+.collegetext {
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+
+.gender-category {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.male-part {
+  display: flex;
+  margin-right: 10px;
+}
+
+.select-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  height: 42px;
+}
+
+.uil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.female-part {
+  display: flex;
+}
+
+@media screen and (max-width: 1127px) {
+  .form-part {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  #collegeinput {
+    width: 100%;
+  }
+
+  .form-name-part {
+    width: 100%;
+  }
+
+  .form-college-name {
+    width: 100%;
+  }
+
+  .contact-email {
+    width: 100%;
+  }
+
+  .contact-state {
+    width: 100%;
+  }
+
+  .contact-phone {
+    width: 100%;
+  }
+
+  .contact-sports {
+    width: 100%;
+  }
+
+  .form-name {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-contact {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .upload-part {
+    width: 100%;
+  }
+
+  .common-input {
+    width: 100%;
+  }
+  .form-phone {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-register {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .register-button button {
+    width: 100%;
+  }
+  .terms button {
+    width: 100%;
+  }
+
+  .heading {
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .register-button button {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .face {
+    display: none;
+  }
+
+  .symbol {
+    display: none;
+  }
+  .heading {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .heading {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  .select-college {
+    font-size: 12px;
+  }
+
+  .select-sport {
+    font-size: 12px;
+  }
+
+  .select-state {
+    font-size: 12px;
+  }
+}
+
+input {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  height: 23px;
+}
+
+@media screen and (min-width: 1127px) {
+  .college-content {
+    max-width: 33%;
+  }
+
+  .sport-content {
+    max-width: 33%;
+  }
+
+  .state-content {
+    max-width: 33%;
+  }
+}
+
+.despoloader1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.select-college {
+  outline: none;
+  color: white;
+  background: transparent;
+}
+
+.select-state {
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.select-sport {
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.college-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 7px;
+  padding: 7px;
+  background-color: white;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.sport-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 7px;
+  padding: 7px;
+  background-color: white;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.state-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 7px;
+  padding: 7px;
+  background-color: white;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#college-options div {
+  margin: 15px;
+  height: 40px;
+}
+
+.options div {
+  height: 35px;
+  margin: 10px;
+  padding: 0 13px;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 12px;
+}
+
+.options div:hover {
+  background-color: #f2f2f2;
+}
+
+.college-content::-webkit-scrollbar {
+  width: 7px;
+}
+.college-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.college-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.college-content::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.sport-content::-webkit-scrollbar {
+  width: 7px;
+}
+.sport-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.sport-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.sport-content::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.state-content::-webkit-scrollbar {
+  width: 7px;
+}
+.state-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.state-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.state-content::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}

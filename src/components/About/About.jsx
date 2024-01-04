@@ -15,7 +15,7 @@ const About = () => {
         scrollTrigger: {
           trigger: comp.current,
           start: "top", 
-          end: "bottom center", 
+          end: "bottom", 
           once: true, 
         },
       });
@@ -59,7 +59,7 @@ const About = () => {
 
         </div>
         <img className="absolute right-1 top-48" src="src/components/images/about__rocks_right.svg" />
-        <img className="absolute left-1 top-28" src="src/components/images/about__rocks_right.svg" />
+        <img className="absolute left-1 rotate-180 top-28" src="src/components/images/about__rocks_right.svg" />
 
       </div>
     </div>

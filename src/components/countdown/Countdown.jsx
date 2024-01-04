@@ -32,20 +32,28 @@ function Countdown() {
   const comp=useRef(null)
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline()
-  
-      tl.from(".title", {
-        x:-1000,
-        delay:2,
-        duration:0.5
-      })
-    }, comp)
-    return () => {
-      ctx.revert()
-    }
-  }, [])
+    gsap.registerPlugin(ScrollTrigger);
 
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: comp.current,
+          start: "top", 
+          end: "bottom", 
+          once: true, 
+        },
+      });
+
+      tl.from(".title", {
+        opacity: 0,
+        duration: 0.5,
+      });
+    }, comp);
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
 
   return (
     

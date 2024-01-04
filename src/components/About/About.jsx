@@ -1,6 +1,40 @@
+import { gsap, } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef, useLayoutEffect, useEffect, useState } from 'react';
+
 const About = () => {
+
+
+  const comp = useRef(null)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: comp.current,
+          start: "top",
+          end: "bottom",
+          once: true,
+        },
+      });
+
+      tl.from(".text", {
+        opacity: 0,
+        duration: 0.5,
+      });
+    }, comp);
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
+
+
   return (
-    <div className="relative">
+    <div className='relative' ref={comp}>
+
       <div id="about111" className="bg-[#070707] h-fit px-16 md:px-56 pt-72 relative z-20">
         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 relative">
           <div className="flex flex-col justify-start items-start gap-7 ">
@@ -35,6 +69,7 @@ const About = () => {
         }}
       />
     </div>
+
   )
 }
 

@@ -355,7 +355,7 @@ html {
 }
 @media (max-width: 990px) {
   html {
-    overflow-x: hidden;
+  
     touch-action: manipulation;
   }
 }
@@ -364,7 +364,7 @@ body {
   background: #000000;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
 }
 body::-webkit-scrollbar {
   width: 3px;
@@ -376,7 +376,6 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 990px) {
   body {
-    overflow: hidden;
     position: relative;
     width: 100%;
     height: 100%;
@@ -398,9 +397,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.overflowHidden {
-  overflow-y: hidden !important;
-}
+
 
 .instagram {
   display: none !important;

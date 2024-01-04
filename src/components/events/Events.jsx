@@ -83,7 +83,7 @@ function Events() {
           ))}
         </Swiper>
         <div
-          className="absolute inset-x-0 -top-44 h-16"
+          className="absolute inset-x-0 -top-48 h-16"
           style={{
             background: "linear-gradient(black, transparent)",
           }}

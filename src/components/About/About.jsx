@@ -54,7 +54,7 @@ const About = () => {
           </div>
           <img className="hidden md:block h-3/4 justify-self-center" src="src/components/images/Line1.png" />
           <div className="flex justify-center items-center">
-            <img className="mt-8 p-2 md:mt-0 scale-125" src="src/components/images/textabout.png" />
+            <img className="mt-8 p-2 md:mt-0 scale-125 text" src="src/components/images/textabout.png" />
           </div>
 
         </div>

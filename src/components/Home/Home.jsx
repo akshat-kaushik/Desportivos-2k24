@@ -24,9 +24,9 @@ const Home = () => {
           <img className="object-center h-26 sm:h-32 w-[75%]" src="src/components/images/desportivous.png" alt="despo" />
         </div>
 
-        <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-48 ' src='src/components/images/heros.png' />
-        <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='src/components/images/power.gif' />
-        <img className=' md:hidden fixed -translate-x-1/2  left-1/2 bottom-48 scale-[2] ' src='src/components/images/heros.png' />
+        <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-60 ' src='src/components/images/heros.png' />
+        {/* <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='src/components/images/power.gif' /> */}
+        <img className=' md:hidden fixed -translate-x-1/2  left-1/2 bottom-40 scale-[2] ' src='src/components/images/heros.png' />
 
 
         <img className='fixed -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='src/components/images/boards.png' />

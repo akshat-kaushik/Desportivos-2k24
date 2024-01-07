@@ -14,8 +14,8 @@ const About = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: comp.current,
-          start: "top",
-          end: "bottom",
+          start: "top 80%",
+          end: "top 20%",
           once: true,
         },
       });

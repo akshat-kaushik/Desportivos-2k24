@@ -56,13 +56,13 @@ const Fests = () => {
                     onClick={() => handleHeroClick(index)}
                   >
                     <img
-                      src={`public/images/active_hero_${index + 1}.png`}
+                      src={`./images/active_hero_${index + 1}.png`}
                       alt={`hero ${index + 1}`}
                       className={`hero_${index + 1} ${index === activeHero ? 'hero__active' : ''}`}
                     />
                     
                     <img
-                      src={`public/images/hero_default_${index + 1}.png`}
+                      src={`./images/hero_default_${index + 1}.png`}
                       alt={`hero ${index + 1}`}
                       className={`hero_default_${index + 1} ${index === activeHero ? '' : 'hero__default'}`}
                     />
@@ -77,13 +77,13 @@ const Fests = () => {
                     onClick={() => handleHeroClick(index)}
                   >
                     <img
-                      src={`public/images/active_hero_${index + 1}.png`}
+                      src={`./images/active_hero_${index + 1}.png`}
                       alt={`hero ${index + 1}`}
                       className={`${hero.hero}_dark ${index === activeHero ? 'hero__active' : ''}`}
                     />
                     {console.log(activeHero)}
                     <img
-                      src={`public/images/hero_default_${index + 1}.png`}
+                      src={`./images/hero_default_${index + 1}.png`}
                       alt={`hero ${index + 1}`}
                       className={`${hero.hero}_light ${index === activeHero ? '' : 'hero__default'}`}
                     />
@@ -96,7 +96,7 @@ const Fests = () => {
                   data-id=".content__hero_1"
                   data-img=".lady_light"
                 >
-                  <img src="public/images/wind.svg" alt="" />
+                  <img src="./images/wind.svg" alt="" />
                   <div className="hero__1_svg_circle_1 hero__circle_1">
                     <svg
                       width="57"
@@ -163,7 +163,7 @@ const Fests = () => {
                   data-id=".content__hero_2"
                   data-img=".demon_light"
                 >
-                  <img src="public/images/energy.svg" alt="" />
+                  <img src="./images/energy.svg" alt="" />
                   <div className="hero__2_svg_circle_1 hero__circle_1">
                     <svg
                       width="61"
@@ -251,7 +251,7 @@ const Fests = () => {
                   data-id=".content__hero_3"
                   data-img=".fire_light"
                 >
-                  <img src="public/images/fire.svg" alt="" />
+                  <img src="./images/fire.svg" alt="" />
                   <div className="hero__3_svg_circle_1 hero__circle_1">
                     <svg
                       width="51"
@@ -346,7 +346,7 @@ const Fests = () => {
                   data-id=".content__hero_4"
                   data-img=".lightning_light"
                 >
-                  <img src="public/images/energy2.svg" alt="" />
+                  <img src="./images/energy2.svg" alt="" />
                   <div className="hero__4_svg_circle_1 hero__circle_1">
                     <svg
                       width="35"
@@ -442,7 +442,7 @@ const Fests = () => {
                   {heroData.map((hero, index) => (
                     <div key={index} className={`content__hero content__hero_${index + 1}`} style={{ display: index === activeHero ? 'block' : 'none' }}>
                       <h3 className="hero__title">
-                        <img src={`public/images/force-${index + 1}.svg`} alt="force" className="hero__force" />
+                        <img src={`./images/force-${index + 1}.svg`} alt="force" className="hero__force" />
                         {hero.title}
                       </h3>
                       <div className="hero__description">

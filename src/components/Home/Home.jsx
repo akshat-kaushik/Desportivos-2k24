@@ -22,15 +22,15 @@ const Home = () => {
         <Navbar />
 
         <div className="md:fixed absolute bottom-28 md:bottom-2 flex justify-center align-middle mb-2 w-full z-10">
-          <img className="object-center h-26 sm:h-32 w-[75%]" src="public/images/desportivous.png" alt="despo" />
+          <img className="object-center h-26 sm:h-32 w-[75%]" src="./images/desportivous.png" alt="despo" />
         </div>
 
-        <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-60 ' src='public/images/heros.png' />
-        {/* <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='public/images/power.gif' /> */}
-        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-36 scale-[2] ' src='public/images/heros.png' />
+        <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-60 ' src='./images/heros.png' />
+        {/* <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='./images/power.gif' /> */}
+        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-36 scale-[2] ' src='./images/heros.png' />
 
 
-        <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='public/images/boards.png' />
+        <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='./images/boards.png' />
 
 
         <div className='flex justify-center items-center gap-2 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-6'>
@@ -42,14 +42,14 @@ const Home = () => {
 
 
 
-        <img className="hidden md:block absolute -bottom-20 z-20" src="public/images/Rocks.png" alt="rock" />
+        <img className="hidden md:block absolute -bottom-20 z-20" src="./images/Rocks.png" alt="rock" />
 
 
 
 
       </div>
-      <img className="hidden md:block absolute -bottom-80  left-0 z-30" src="public/images/rocks-front__left-1.png" alt="rock" />
-      <img className="hidden md:block absolute -bottom-80  right-0 z-30" src="public/images/rocks-front__right-1.png" alt="rock" />
+      <img className="hidden md:block absolute -bottom-80  left-0 z-30" src="./images/rocks-front__left-1.png" alt="rock" />
+      <img className="hidden md:block absolute -bottom-80  right-0 z-30" src="./images/rocks-front__right-1.png" alt="rock" />
     </div>
 
 

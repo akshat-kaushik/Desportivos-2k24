@@ -20,7 +20,7 @@ const Navbar = () => {
               className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
             </div>
           </button>
-          <div className='text-xl md:font-sans flex relative left-16 justify-between items-center gap-10'>
+          <div className='text-xl md:font-ethnocentric flex relative left-16 justify-between items-center gap-10'>
             <Link activeClass="active"
               to="sponsors"
               spy={true}
@@ -58,9 +58,9 @@ const Navbar = () => {
               spyThrottle={500}
               className="hidden cursor-pointer md:block text-white font-bold">GALLERY</Link>
           </div>
-          {/* <img className='absolute hidden cursor-pointer -translate-x-1/2 -translate-y-1/2 top-16 left-1/2 md:block h-32 w-80' src='public/images/despo.png' /> */}
-          <img className='absolute -translate-x-1/2 -translate-y-1/2 top-12 left-1/2 md:scale-125 cursor-pointer block h-20 w-24' src='public/images/Despoo1.png' />
-          <div className=' text-xl md:font-sans flex relative -right-10 justify-between items-center gap-3'>
+          {/* <img className='absolute hidden cursor-pointer -translate-x-1/2 -translate-y-1/2 top-16 left-1/2 md:block h-32 w-80' src='./images/Despoo1.png' /> */}
+          <img className='absolute -translate-x-1/2 -translate-y-1/2 top-12 left-1/2 md:scale-125  block h-20 w-24' src='./images/Despoo1.png' />
+          <div className=' text-xl md:font-ethnocentric flex relative -right-10 justify-between items-center gap-3'>
             <Link activeClass="active"
               to="events"
               spy={true}
@@ -92,7 +92,7 @@ const Navbar = () => {
             </Linkkk>
           </div>
         </div>
-        <img className='absolute -translate-x-1/2 -translate-y-1/2 top-24 left-1/2 hidden w-3/4 md:block' src='public/images/pseudo.png' />
+        <img className='absolute -translate-x-1/2 -translate-y-1/2 top-24 left-1/2 hidden w-3/4 md:block' src='./images/pseudo.png' />
       </div>
 
       <section id="mobile-menu"

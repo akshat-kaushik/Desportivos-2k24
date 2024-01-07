@@ -15,8 +15,7 @@ function Front() {
     <About/>
     <Fests/>
     <Gallery/>
-    <Events />
-    <Team/>
+    <Events/>
     <Countdown/>
     </>
       

@@ -15,7 +15,7 @@ const About = () => {
         scrollTrigger: {
           trigger: comp.current,
           start: "top",
-          end: "middle",
+          end: "top",
           once: true,
         },
       });

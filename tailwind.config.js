@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        homepc: 'url("./images/land.png")',
+        homepc: 'url(land.png")',
         homemob: 'url("./images/land2.png")',
         buttonbg: 'url("./images/button-bg.svg")'
       },

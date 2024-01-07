@@ -28,7 +28,7 @@ const Navbar = () => {
               hashSpy={true}
               offset={50}
               duration={500}
-              delay={1000}
+              delay={200}
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500}
@@ -40,7 +40,7 @@ const Navbar = () => {
               hashSpy={true}
               offset={50}
               duration={500}
-              delay={1000}
+              delay={200}
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500}
@@ -52,7 +52,7 @@ const Navbar = () => {
               hashSpy={true}
               offset={50}
               duration={500}
-              delay={1000}
+              delay={200}
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500}
@@ -68,7 +68,7 @@ const Navbar = () => {
               hashSpy={true}
               offset={50}
               duration={500}
-              delay={1000}
+              delay={200}
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500}
@@ -80,7 +80,7 @@ const Navbar = () => {
               hashSpy={true}
               offset={50}
               duration={500}
-              delay={1000}
+              delay={200}
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500} className="hidden cursor-pointer md:block text-white font-bold">TEAM</Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
             hashSpy={true}
             offset={50}
             duration={500}
-            delay={1000}
+            delay={200}
             isDynamic={true}
             ignoreCancelEvents={false}
             spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">SPONSORS</Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
             hashSpy={true}
             offset={50}
             duration={500}
-            delay={1000}
+            delay={200}
             isDynamic={true}
             ignoreCancelEvents={false}
             spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">GALLERY</Link>
@@ -127,7 +127,7 @@ const Navbar = () => {
             hashSpy={true}
             offset={50}
             duration={500}
-            delay={1000}
+            delay={200}
             isDynamic={true}
             ignoreCancelEvents={false}
             spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">EVENTS</Link>

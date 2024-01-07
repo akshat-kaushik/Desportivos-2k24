@@ -58,8 +58,8 @@ const Navbar = () => {
               spyThrottle={500}
               className="hidden cursor-pointer md:block text-white font-bold">GALLERY</Link>
           </div>
-          {/* <img className='absolute hidden cursor-pointer -translate-x-1/2 -translate-y-1/2 top-16 left-1/2 md:block h-32 w-80' src='src/components/images/despo.png' /> */}
-          <img className='absolute -translate-x-1/2 -translate-y-1/2 top-12 left-1/2 md:scale-125 cursor-pointer block h-20 w-24' src='src/components/images/Despoo1.png' />
+          {/* <img className='absolute hidden cursor-pointer -translate-x-1/2 -translate-y-1/2 top-16 left-1/2 md:block h-32 w-80' src='public/images/despo.png' /> */}
+          <img className='absolute -translate-x-1/2 -translate-y-1/2 top-12 left-1/2 md:scale-125 cursor-pointer block h-20 w-24' src='public/images/Despoo1.png' />
           <div className=' text-xl md:font-sans flex relative -right-10 justify-between items-center gap-3'>
             <Link activeClass="active"
               to="events"
@@ -92,15 +92,45 @@ const Navbar = () => {
             </Linkkk>
           </div>
         </div>
-        <img className='absolute -translate-x-1/2 -translate-y-1/2 top-24 left-1/2 hidden w-3/4 md:block' src='src/components/images/pseudo.png' />
+        <img className='absolute -translate-x-1/2 -translate-y-1/2 top-24 left-1/2 hidden w-3/4 md:block' src='public/images/pseudo.png' />
       </div>
 
       <section id="mobile-menu"
         className="font-ethnocentric top-24 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl z-40">
         <nav className="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
-          <a href="#sponsors" className="text-white w-full py-6 text-center hover:opacity-90">SPONSORS</a>
-          <a href="#gallery" className="text-white w-full py-6 text-center hover:opacity-90">GALLERY</a>
-          <a href="#events" className="text-white w-full py-6 text-center hover:opacity-90">EVENTS</a>
+          <Link activeClass="active"
+            to="sponsors"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+            delay={1000}
+            isDynamic={true}
+            ignoreCancelEvents={false}
+            spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">SPONSORS</Link>
+          <Link activeClass="active"
+            to="gallery"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+            delay={1000}
+            isDynamic={true}
+            ignoreCancelEvents={false}
+            spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">GALLERY</Link>
+          <Link activeClass="active"
+            to="events"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+            delay={1000}
+            isDynamic={true}
+            ignoreCancelEvents={false}
+            spyThrottle={500} className="text-white w-full py-6 text-center hover:opacity-90">EVENTS</Link>
           <a href="#team" className="text-white w-full py-6 text-center hover:opacity-90">TEAM</a>
         </nav>
       </section>

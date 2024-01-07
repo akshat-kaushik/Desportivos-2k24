@@ -7,9 +7,21 @@ import Gallery from './components/gallery/Gallery';
 import Home from './components/Home/Home';
 import About from './components/About/About'
 import Fests from './components/Fests/Fests'
-
+import Loading from './components/Loading';
+import { useState,useEffect } from 'react';
 function Front() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
+  }, []);
+
   return (
+    <>
+    {loading?(<Loading/>):(
     <>
     <Home/>
     <About/>
@@ -17,6 +29,8 @@ function Front() {
     <Gallery/>
     <Events/>
     <Countdown/>
+    </>)}
+    
     </>
       
       

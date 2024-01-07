@@ -1,0 +1,63 @@
+/* Common styles */
+.bgimg {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 110vh;
+  padding: 5px;
+  outline: none;
+  height: 40px;
+  margin-left:1vh;
+  margin-top: 22px;
+}
+
+.container h1 {
+  color: white;
+  margin-left:1vh;
+}
+
+.register-button1 button {
+  background-color: #f14b64;
+  border-radius: 20px;
+  width: 60%;
+  transition: background-color 0.3s;
+  color: white;
+  border: 1px solid black; /* Specify border style */
+}
+
+.register-button1 button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .inputField {
+    width: 100%;
+  }
+
+  .register-button button {
+    width: 100%;
+  }
+}

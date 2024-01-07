@@ -27,10 +27,10 @@ const Home = () => {
 
         <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-60 ' src='public/images/heros.png' />
         {/* <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='public/images/power.gif' /> */}
-        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-36 scale-[2] ' src='public/images/heros.png' />
+        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-36 scale-[2] ' src='/images/heros.png' />
 
 
-        <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='public/images/boards.png' />
+        <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='/images/boards.png' />
 
 
         <div className='flex justify-center items-center gap-2 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-6'>

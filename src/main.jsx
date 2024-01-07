@@ -7,7 +7,6 @@ import {
 import "./index.css";
 import Registration from "./components/registration/Registration";
 import Front from "./Front";
-import locomotiveScroll from "locomotive-scroll";
 import Esports from "./components/esports/Esports";
 
 

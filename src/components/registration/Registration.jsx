@@ -32,15 +32,15 @@ const Registration = () => {
       return;
     }
 
-    // if (!validatePhone(phone)) {
-    //   alert("Invalid phone number format. Please enter a valid phone number.");
-    //   return;
-    // }
+    if (!validatePhone(phone)) {
+      alert("Invalid phone number format. Please enter a valid phone number.");
+      return;
+    }
 
-    // if (!validateEmail(email)) {
-    //   alert("Invalid email format. Please enter a valid email address.");
-    //   return;
-    // }
+    if (!validateEmail(email)) {
+      alert("Invalid email format. Please enter a valid email address.");
+      return;
+    }
 
     rtext1.current.textContent = "Registering...";
 

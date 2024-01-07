@@ -59,7 +59,7 @@ function Countdown() {
     
       <div className="bg-black h-screen overflow-x-hidden overflow-y-hidden" ref={comp}>
         <div className=" top-28 sm:top-32 h-screen w-screen relative ">
-        <h1 className='text-white text-xl ml-10 text-center sm:text-left sm:text-5xl '>#RISE Beyound limits</h1>
+        <h1 className='text-white text-xl ml-10 text-center absolute top-24 md:top-16 sm:text-left sm:text-5xl '>#RISE Beyound limits</h1>
 
         <div className="text-white text-xl top-0 absolute pl-10 sm:text-6xl">
           <div className="sm:pl-20 flex mt-20 ">
@@ -82,7 +82,7 @@ function Countdown() {
           </div>
         </div>
 
-        <img className='mt-28 absolute -right-8 sm:top-28 sm:-mt-10 sm:-right-20' src="rockHero.png" alt="" />
+        <img className='mt-60 absolute -right-8 sm:top-16 sm:-mt-10 sm:-right-20' src="rockHero.png" alt="" />
              
         
         <img className='absolute hidden sm:-bottom-28 sm:block w-full' src="bottomRock.png" alt="" />

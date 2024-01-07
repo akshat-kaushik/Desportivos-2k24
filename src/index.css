@@ -20,4 +20,11 @@ body {
   overflow-x: hidden; /* This line should be outside the scrollbar block */
 }
 
+.background-lap{
+  background-image: url("./land.png");
+}
+.background-mob{
+  background-image: url("land2.png");
+}
+
 

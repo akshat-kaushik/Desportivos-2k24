@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        homepc: 'url(land.png")',
-        homemob: 'url(land2.png)',
-        buttonbg: 'url(button-bg.svg)'
+        homepc: 'url("src/components/images/land.png")',
+        homemob: 'url(src/components/images/land/land2.png)',
+        buttonbg: 'url(src/components/images/land/button-bg.svg)'
       },
       keyframes: {
         'open-menu': {

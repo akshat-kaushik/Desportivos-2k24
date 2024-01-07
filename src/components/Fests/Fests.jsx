@@ -40,8 +40,8 @@ const Fests = () => {
     <div>
       <section className="select min-h-screen bg-black z-20">
         <div className="select__title font-[ethnocentric]">
-          Know Your
-          <p>Fest</p>
+          DESPORTIVOS
+          <p>2024</p>
         </div>
         <div className="select__box">
           <div className="container">

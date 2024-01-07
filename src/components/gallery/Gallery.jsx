@@ -5,6 +5,7 @@ function Gallery() {
   return (
     <div id="gallery" className="bg-black h-screen flex items-center justify-center">
       <div className="h-screen w-screen relative">
+
         <img
           className="absolute md:top-1/3 rotate-180 -left-32"
           src="galleryRock1.png"
@@ -15,6 +16,7 @@ function Gallery() {
           src="galleryRock2.png"
           alt=""
         />
+        
 
         <div className="slider1 top-28 sm:top-24">
           <div className="slide-track">

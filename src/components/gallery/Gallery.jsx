@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 function Gallery() {
   return (
-    <div className="bg-black h-screen flex items-center justify-center">
+    <div id="gallery" className="bg-black h-screen flex items-center justify-center">
       <div className="h-screen w-screen relative">
         <img
           className="absolute top-1/3 -left-32"

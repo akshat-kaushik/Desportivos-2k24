@@ -25,6 +25,7 @@ const sportsArray = [
 function Events() {
   return (
     <div
+      id="events"
       className="relative flex items-center justify-center"
       style={{
         backgroundImage: `url('./events_back.jpg')`,

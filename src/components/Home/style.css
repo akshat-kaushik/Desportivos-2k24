@@ -355,7 +355,7 @@ html {
 }
 @media (max-width: 990px) {
   html {
-  
+    /* overflow-x: hidden; */
     touch-action: manipulation;
   }
 }
@@ -379,6 +379,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     width: 100%;
     height: 100%;
+    
   }
 }
 @media (max-width: 990px) and (max-aspect-ratio: 1/1) {
@@ -5882,6 +5883,23 @@ body::-webkit-scrollbar-thumb {
     z-index: 3;
     width: 120px;
   }
+  .select__box .box__heros .herosMob .lady_dark,
+  .select__box .box__heros .herosMob .demon_dark,
+  .select__box .box__heros .herosMob .lightning_dark,
+  .select__box .box__heros .herosMob .fire_dark {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .select__box .box__heros .herosMob .hero__active{
+    opacity:1;
+    z-index: 10;
+  }
+  .select__box .box__heros .herosMob .hero__default{
+    opacity:1;
+    z-index: 10;
+  }
   .select__box .box__heros .herosMob .lady_light {
     left: 0px;
     bottom: 3px;
@@ -5911,7 +5929,7 @@ body::-webkit-scrollbar-thumb {
   .select__box .box__heros .herosMob .lightning_light,
   .select__box .box__heros .herosMob .fire_light {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease;
   }
   .select__box .box__heros .herosMob .lady_light.active,

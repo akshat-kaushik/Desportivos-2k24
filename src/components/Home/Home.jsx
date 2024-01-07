@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
 
@@ -26,14 +27,19 @@ const Home = () => {
 
         <img className='hidden md:block fixed -translate-x-1/2  left-1/2 bottom-10 md:-bottom-60 ' src='src/components/images/heros.png' />
         {/* <img className='hidden md:block fixed -translate-x-1/2 w-[52rem] left-[52.8rem]  md:bottom-[2rem] ' src='src/components/images/power.gif' /> */}
-        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-44 scale-[2] ' src='src/components/images/heros.png' />
+        <img className=' md:hidden absolute -translate-x-1/2  left-1/2 bottom-36 scale-[2] ' src='src/components/images/heros.png' />
 
 
         <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='src/components/images/boards.png' />
 
-        <a href=''>
-          <img className='md:hidden absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-6' src='src/components/images/Register01.png' />
-        </a>
+
+        <div className='flex justify-center items-center gap-2 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-6'>
+          <Link to={'/registration'} className='md:hidden  cursor-pointer rounded-2xl bg-[#F94560] text-white py-2 px-4 font-bold text-xl '> sports</Link>
+          <Link to={'/registration'} className='md:hidden cursor-pointer rounded-2xl bg-[#5018AB] text-white py-2 px-4 font-bold text-xl w-44'>esports</Link>
+
+        </div>
+
+
 
 
         <img className="hidden md:block absolute -bottom-20 z-20" src="src/components/images/Rocks.png" alt="rock" />

@@ -59,24 +59,24 @@ function Countdown() {
     
       <div className="bg-black h-screen overflow-x-hidden overflow-y-hidden" ref={comp}>
         <div className=" top-28 sm:top-32 h-screen w-screen relative ">
-        <h1 className='text-white text-xl pl-20 sm:text-3xl title'>SEE YOU THERE IN</h1>
+        <h1 className='text-white text-xl ml-10 text-center sm:text-left sm:text-5xl '>#RISE Beyound limits</h1>
 
-        <div className="text-white text-xl top-0 absolute pl-3 sm:text-6xl">
-          <div className="sm:pl-20 flex ">
+        <div className="text-white text-xl top-0 absolute pl-10 sm:text-6xl">
+          <div className="sm:pl-20 flex mt-20 ">
             <div className="my-20  p-2">
-              <div className="font-bold ml-8 z-10">{formatNumber(day)}</div>
+              <div className="font-bold ml-7 md:ml-20 z-10">{formatNumber(day)}</div>
               <div className='text-red-400 z-10'>Days</div>
             </div>
             <div className="my-20  p-2">
-              <div className="font-bold ml-10">{hour}</div>
+              <div className="font-bold md:ml-20 ml-10">{hour}</div>
               <div className='text-red-400'>Hours</div>
             </div>
-            <div className="my-20  p-2">
-              <div className="font-bold ml-3">{min}</div>
+            <div className="my-20 p-2">
+              <div className="font-bold ml-2 md:ml-6">{min}</div>
               <div className='text-red-400'>Min</div>
             </div>
             <div className="my-20  p-2">
-              <div className="font-bold ml-3">{sec}</div>
+              <div className="font-bold ml-2  md:ml-10">{sec}</div>
               <div className='text-red-400' >Sec</div>
             </div>
           </div>

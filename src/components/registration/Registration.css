@@ -77,7 +77,7 @@ body {
   color: white;
   text-align: center;
   margin-top: 40px;
-  font-size: 60px;
+  font-size: 6vh;
 }
 
 .common-design {
@@ -301,7 +301,7 @@ body {
 
   .heading {
     margin: auto;
-    width: 50%;
+    width: 100%;
     font-size: 20px;
     text-align: center;
   }
@@ -326,7 +326,7 @@ body {
 
 @media screen and (max-width: 598px) {
   .heading {
-    font-size: 15px;
+    font-size:4vh;
     margin-top: 40px;
   }
 
@@ -491,4 +491,46 @@ input {
 }
 .state-content::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
+}
+
+.register-text {
+  font-family: "Ethnocentric", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.register-button button {
+  background-color: #f14b64;
+  border-radius: 20px;
+  width: 30%;
+  transition: background-color 0.3s;
+  color: white;
+  border: 1px solid black; /* Specify border style */
+}
+
+
+.register-button button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.test{
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  height: 40px;
+  padding: 5px;
+  margin-top: 22px;
+  width:71vh;
+}
+
+@media screen and (max-width: 1127px) {
+  .test{
+    width:100%;
+  }
 }

@@ -23,6 +23,7 @@ function Team() {
             <img className="absolute top-full" src="eventStrike2.png" alt="" />
             <img className="" src="eventStrike3.png" alt="" />
           </div>
+          <img src="teamBoard.png" alt="" />
         </div>
       </div>
 

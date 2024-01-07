@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
-
+import './Home.css'
 
 const Home = () => {
 
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className='bg-black relative w-full min-h-screen '>
 
-      <div id='bg' className="p-0 m-0 bg-homemob sm:bg-homepc min-h-screen bg-no-repeat bg-cover absolute top-0 left-0 w-full  md:bg-fixed " >
+      <div id='bg'  className="p-0 m-0 bg-homemob sm:bg-homepc min-h-screen bg-no-repeat bg-cover absolute top-0 left-0 w-full  md:bg-fixed " >
         <div className='z-50'>
         <Navbar />
 

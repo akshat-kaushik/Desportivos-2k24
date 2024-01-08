@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "./events.css"; // Import your custom styles
 import Template from "./Template";
 
@@ -66,6 +66,7 @@ function Events() {
           centeredSlides={true}
           slidesPerView={"auto"}
           loop={true}
+
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -74,7 +75,7 @@ function Events() {
             slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow]}
+          modules={[EffectCoverflow,Pagination]}
           className="mySwiper"
         >
           {sportsArray.map((sport, index) => (

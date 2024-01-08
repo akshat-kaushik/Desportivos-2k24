@@ -4,20 +4,20 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        homepc: 'url("src/components/images/land.png")',
-        homemob: 'url(src/components/images/land/land2.png)',
-        buttonbg: 'url(src/components/images/land/button-bg.svg)'
+        homepc: 'url(/images/land.png)',
+        homemob: "url(/images/land2.png)",
+        buttonbg: "url(/images/button-bg.svg)",
       },
       keyframes: {
-        'open-menu': {
-          '0%': { transform: 'scaleY(0)' },
-          '80%': { transform: 'scaleY(1.2)' },
-          '100%': { transform: 'scaleY(1)' },
+        "open-menu": {
+          "0%": { transform: "scaleY(0)" },
+          "80%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
         },
       },
       animation: {
-        'open-menu': 'open-menu 0.5s ease-in-out forwards',
-      }
+        "open-menu": "open-menu 0.5s ease-in-out forwards",
+      },
     },
   },
   plugins: [],

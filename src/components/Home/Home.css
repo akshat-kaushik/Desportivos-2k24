@@ -1,0 +1,34 @@
+.one-class {
+  /* Resetting padding and margin */
+  padding: 0;
+  margin: 0;
+
+  /* Setting background styles */
+  background: url("./images/land.png");
+  background-size: cover;
+
+  /* For small screens */
+  @media (min-width: 640px) {
+    background: url("./images/land2.png");
+  }
+
+  /* Setting minimum height to cover the screen */
+  min-height: 100vh;
+  
+  /* Background properties */
+  background-repeat: no-repeat;
+
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Full width */
+  width: 100%;
+
+  /* For medium-sized screens */
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+}
+

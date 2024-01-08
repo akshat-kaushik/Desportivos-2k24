@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
-
+import './Home.css'
 
 const Home = () => {
 
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className='bg-black relative w-full min-h-screen '>
 
-      <div id='bg' className="p-0 m-0 bg-homemob sm:bg-homepc min-h-screen bg-no-repeat bg-cover absolute top-0 left-0 w-full  md:bg-fixed " >
+      <div id='bg'  className="p-0 m-0 bg-homemob sm:bg-homepc min-h-screen bg-no-repeat bg-cover absolute top-0 left-0 w-full  md:bg-fixed " >
         <div className='z-50'>
         <Navbar />
 
@@ -38,7 +38,7 @@ const Home = () => {
 
         <img className='md:fixed absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-44 md:bottom-24' src='./images/boards.png' />
         <div className='flex justify-center items-center gap-2 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-6'>
-          <Link to={'/registration'} className='md:hidden  cursor-pointer rounded-2xl bg-[#F94560] text-white py-2 px-4 font-bold text-xl '> sports</Link>
+          <Link to={'/registration'} className='md:hidden  cursor-pointer rounded-2xl bg-[#F94560] text-white py-2 px-4 font-bold text-xl '> register</Link>
           <Link to={'/esportsReg'} className='md:hidden cursor-pointer rounded-2xl bg-[#5018AB] text-white py-2 px-4 font-bold text-xl w-44'>esports</Link>
 
         </div>

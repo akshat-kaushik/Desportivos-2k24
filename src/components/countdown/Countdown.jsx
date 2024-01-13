@@ -61,7 +61,7 @@ function Countdown() {
         <div className=" top-28 sm:top-32 h-screen w-screen relative ">
         <h1 className='text-white text-xl ml-10 text-center absolute top-24 md:top-16 sm:text-left sm:text-5xl '>#RISE Beyond limits</h1>
 
-        <div className="text-white text-xl top-0 absolute pl-10 sm:text-6xl">
+        <div className="text-white text-2xl top-0 absolute pl-10 sm:text-6xl">
           <div className="sm:pl-20 flex mt-20 ">
             <div className="my-20  p-2">
               <div className="font-bold ml-7 md:ml-20 z-10">{formatNumber(day)}</div>

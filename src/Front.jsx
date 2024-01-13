@@ -18,7 +18,7 @@ function Front() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 10000);
   }, []);
 
   return (

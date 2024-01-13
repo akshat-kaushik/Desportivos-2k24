@@ -244,7 +244,7 @@ const Registration = () => {
             </button>
           </div>
         </div>
-        <img src="./img/background.png" className="absolute -z-10 top-0 w-screen min-h-full over" alt="bgimg" />
+        <img src="./img/background.png" className="bgimg" alt="bgimg" />
         <img
           src="./img/span.meteorite__left_center.png"
           alt="symbol"

@@ -82,7 +82,7 @@ html {
 }
 @media (max-width: 990px) {
   html {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     touch-action: manipulation;
   }
 }

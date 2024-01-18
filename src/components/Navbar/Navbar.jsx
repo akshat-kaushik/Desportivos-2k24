@@ -97,7 +97,7 @@ const Navbar = () => {
 
       <section id="mobile-menu"
         className="font-ethnocentric top-24 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl z-40">
-        <nav className="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+        <nav className="flex min-h-screen flex-col items-center py-8"  aria-label="mobile">
           <Link activeClass="active"
             to="sponsors"
             spy={true}

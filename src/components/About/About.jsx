@@ -5,35 +5,35 @@ import React, { useRef, useLayoutEffect, useEffect, useState } from 'react';
 const About = () => {
 
 
-  const comp = useRef(null)
+  // const comp = useRef(null)
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: comp.current,
-          start: "top 80%",
-          end: "top 20%",
-          once: true,
-        },
-      });
+  //   let ctx = gsap.context(() => {
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: comp.current,
+  //         start: "top 80%",
+  //         end: "top 20%",
+  //         once: true,
+  //       },
+  //     });
 
-      tl.from(".text", {
-        opacity: 0,
-        duration: 0.5,
-      });
-    }, comp);
+  //     tl.from(".text", {
+  //       opacity: 0,
+  //       duration: 0.5,
+  //     });
+  //   }, comp);
 
-    return () => {
-      ctx.revert();
-    };
-  }, []);
+  //   return () => {
+  //     ctx.revert();
+  //   };
+  // }, []);
 
 
   return (
-    <div className='relative' ref={comp}>
+    <div className='relative' >
 
       <div id="about111" className="bg-[#070707] h-fit px-16 md:px-56 pt-72 relative z-20">
         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 relative">

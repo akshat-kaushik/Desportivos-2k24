@@ -49,8 +49,11 @@
 .button{
           /* width:40px; */
           color: white;
-         
           cursor: pointer;
+}
+
+button{
+          font-size: 40px;
 }
 
 @media screen and (max-width:612px){

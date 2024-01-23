@@ -5,6 +5,8 @@ import { WebDeveloperHead } from "../../data/Teamdata/Head";
 import './Team.css';
 import ModalPage from './ModalPage';
 import Modalsecond from "./Modalsecond";
+import { LuArrowLeftCircle } from "react-icons/lu";
+import { LuArrowRightCircle } from "react-icons/lu";
 
 let Head;
 let Member;
@@ -83,7 +85,7 @@ function Team() {
           <div className="modal">
             
               <button className="left-button cursor-pointer text-white" onClick={() => goToPreviousPage()}>
-                    PreV
+              <LuArrowLeftCircle />
             
               </button>
               
@@ -114,7 +116,7 @@ function Team() {
           </div>
           <button className="right-button cursor-pointer color" onClick={() => goTonextPage()}>
                 
-                NEXT
+                <LuArrowRightCircle />
             
           </button>
           </div>

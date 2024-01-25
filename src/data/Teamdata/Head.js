@@ -11,13 +11,29 @@ class Volunteer {
 
 export const GeneralSeceratery = [
           new Volunteer(
-                    "Kaushal Singh",
+                    "Kaushal Singh Rao",
                     null,
                     null,
                     null,
                     "./Team/card(Kaushal).png"
+          ),
+          new Volunteer(
+                    "Sahil Gupta",
+                    null,
+                    null,
+                    null,
+                    null
+          ),
+          new Volunteer(
+                    "Diya Shah",
+                    null,
+                    null,
+                    null,
+                    null
           )
 ]
+
+
 
 export const FestHead = [
           new Volunteer(

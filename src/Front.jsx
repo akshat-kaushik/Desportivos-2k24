@@ -23,17 +23,17 @@ function Front() {
 
   return (
     <>
-    {/* {loading?(<Loading/>):( */}
+    {loading?(<Loading/>):(
     <>
-    {/* <Home/>
+    <Home/>
     <About/>
     <Fests/>
     <Gallery/>
-    <Events/> */}
+    <Events/>
     <Team />
-    {/* <Countdown/> */}
+    <Countdown/>
     </>
-    {/* )} */}
+    )}
     
     </>
       

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { ArtistManagementHead, ContentHead, CreativeHead, EventManagementHead, FestHead, LogisticHeads, PRHead, SponsorshipHead } from "../../data/Teamdata/Head";
+import { ArtistManagementHead, ContentHead, CreativeHead, EventManagementHead, FestHead,  GeneralSeceratery, LogisticHeads, PRHead, SponsorshipHead} from "../../data/Teamdata/Head";
 import { ContentTeam, CreativeTeam, PRTeam, SponsorshipTeam, WebDevTeam } from "../../data/Teamdata/team";
 import { WebDeveloperHead } from "../../data/Teamdata/Head";
 import './Team.css';
 import ModalPage from './ModalPage';
 import Modalsecond from "./Modalsecond";
-import { LuArrowLeftCircle } from "react-icons/lu";
-import { LuArrowRightCircle } from "react-icons/lu";
 
 let Head;
 let Member;
@@ -15,6 +13,7 @@ function Team() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const pages = [
     { component: <ModalPage Head={FestHead} logo={"roadmap-become.svg.png"} Name={"Fest Head"}/>, type: 'headpage' },
+    { component: <ModalPage Head={GeneralSeceratery} logo={"roadmap-become.svg.png"} Name={"Sports Council"}/>, type: 'headpage' },
     { component: <ModalPage Head={CreativeHead} logo={"roadmap-become.svg.png"} Name={"Creative Team"}/>, type: 'headpage' },
     { component: <Modalsecond Member={CreativeTeam} logo={"roadmap-become.svg.png"} Name={"Creative Team"}/>, type: 'teampage' },
     { component: <ModalPage Head={SponsorshipHead} logo={"roadmap-become.svg.png"} Name={"Sponsorship Team"}/>, type: 'headpage' },
@@ -66,7 +65,7 @@ function Team() {
   return (
     <>
       
-        <div className="h-screen w-screen relative">
+        <div className="h-screen w-screen relative teampage">
           <div className="header-area">
             <div className="header-left">
             <h1 className="text-white text-lg md:text-3xl transform -rotate-2">
@@ -74,10 +73,10 @@ function Team() {
             </h1>
             <img className="" src="Desportivos.png" alt="" />
             </div>
-            {/* <img className="absolute top-full" src="eventStrike2.png" alt="" />
-            <img className="absolute top-full" src="eventStrike3.png" alt="" /> */}
+
             <div className='header-r'>
-                <img src='pseudo (2).png' alt='design-1'/>
+            {/* <img src="eventStrike2.png" alt="" /> */}
+            <img src="eventStrike3.png" alt="" />
             </div>
           </div>
 
@@ -85,7 +84,7 @@ function Team() {
           <div className="modal">
             
               <button className="left-button cursor-pointer text-white" onClick={() => goToPreviousPage()}>
-              <LuArrowLeftCircle />
+                <img src='./Arrow/left.png' alt="left" />
             
               </button>
               
@@ -100,10 +99,13 @@ function Team() {
                 <div
                 className="pages"
                 >
+
             {pages.map((page, index) => (
+              <>
               <div key={index} style={{ display: index === currentPageIndex ? 'block' : 'none' }} className={page.type}>
                 {page.component}
               </div>
+                   </>
             ))}
 
 
@@ -116,11 +118,12 @@ function Team() {
           </div>
           <button className="right-button cursor-pointer color" onClick={() => goTonextPage()}>
                 
-                <LuArrowRightCircle />
+                <img src="./Arrow/right.png" alt="right" />
             
           </button>
           </div>
         </div>
+              
         <div className='footer'>
         <div className='footer-design'>
           <div className='design1 size'>
@@ -134,7 +137,7 @@ function Team() {
           </div>
         </div>
       </div>
-    
+              
 
       
         

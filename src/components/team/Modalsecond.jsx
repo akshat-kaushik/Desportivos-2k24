@@ -17,11 +17,7 @@ const Modalsecond = ({Member,logo,Name}) => {
         )} */}
   <div className='header'>
         <div className='header-section '>
-            <div className='header-title color'>
-                  Who is behind
-            </div>
            <div className='header-logo'>
-                  <img className='heading-img' src={`${logo}`} alt="header-img" />
                   <div className='teamname'>{`${Name}`}</div>
             </div>
            

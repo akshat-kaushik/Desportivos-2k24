@@ -1,0 +1,95 @@
+.modal{
+          display: flex;
+          /* overflow-x: scroll; */
+          /* justify-content: space-evenly; */
+          /* justify-content: center;
+          align-items: center; */
+          /* margin-left: 40px; */
+          /* margin-bottom: 100px; */
+          width:95vw;
+          margin: auto;
+         
+}
+
+.teampage{
+          margin-bottom: 100px;
+          height: 570px;
+}
+
+.footer-design{
+          /* display: flex;
+          justify-content: space-between; */
+          display: flex;
+          justify-content: space-between;
+          width: 100vw;
+          /* z-index: -1; */
+}
+
+.modal::-webkit-scrollbar {
+          display: none;
+}
+
+.header-area{
+          display: flex;
+}
+.header-r img{
+          height: 120px;
+}
+
+.header-r{
+          position: absolute;
+          right:0;
+          top:70px;
+
+}
+
+
+
+.size img{
+          height: 70px;
+}
+
+.slides{
+         
+          /* background-color: yellow; */
+          /* width:700px; */
+         width:85vw;
+        height: 65vh;
+         /* margin-top: 30px; */
+         /* z-index: ; */
+          /* margin: auto; */
+}
+.button{
+          /* width:40px; */
+          color: white;
+          cursor: pointer;
+}
+
+button{
+          font-size: 40px;
+}
+
+@media screen and (max-width:612px){
+          .pages{
+                    width:75vw;
+          }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+          .pages{
+                    margin: 0;
+          }
+          .modal{
+                    margin: 0;
+          }
+          .header-r{
+                    display: none;
+          }
+}

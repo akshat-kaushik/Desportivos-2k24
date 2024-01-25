@@ -30,8 +30,10 @@ function Front() {
     <Fests/>
     <Gallery/>
     <Events/>
+    <Team />
     <Countdown/>
-    </>)}
+    </>
+    )}
     
     </>
       

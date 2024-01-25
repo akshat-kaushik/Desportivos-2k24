@@ -66,9 +66,19 @@ function Team() {
     <>
       
         <div className="h-screen w-screen relative teampage">
+        <img className="absolute right-1 top-48 -z-10" src="./images/about__rocks_right.svg" />
+        <img className="absolute left-1 top-28 -z-10" src="./images/about__rocks_right.svg" />
+        <button className="absolute left-1 top-50  cursor-pointer text-white h-full" onClick={() => goToPreviousPage()}>
+                <img src='./Arrow/left.png' alt="left" />     
+      </button>
+      <button className="absolute right-1 top-50 cursor-pointer color h-full" onClick={() => goTonextPage()}>
+                
+                <img src="./Arrow/right.png" alt="right" />
+            
+          </button>
           <div className="header-area">
             <div className="header-left">
-            <h1 className="text-white text-lg md:text-3xl transform -rotate-2">
+            <h1 className="text-white text-3xl transform -rotate-2 ml-11">
               Who is Behind
             </h1>
             <img className="" src="Desportivos.png" alt="" />
@@ -82,13 +92,7 @@ function Team() {
 
           
           <div className="modal">
-            
-              <button className="left-button cursor-pointer text-white" onClick={() => goToPreviousPage()}>
-                <img src='./Arrow/left.png' alt="left" />
-            
-              </button>
               
-
              
              
 
@@ -116,15 +120,9 @@ function Team() {
 
 
           </div>
-          <button className="right-button cursor-pointer color" onClick={() => goTonextPage()}>
-                
-                <img src="./Arrow/right.png" alt="right" />
-            
-          </button>
+
           </div>
-        </div>
-              
-        <div className='footer'>
+          <div className='footer absolute bottom-0'>
         <div className='footer-design'>
           <div className='design1 size'>
             <img src='pseudo (3).png' alt='design2' />
@@ -136,7 +134,12 @@ function Team() {
             <img src='pseudo (4).png' alt='design4' />
           </div>
         </div>
+
+
       </div>
+        </div>
+              
+
               
 
       

@@ -1,15 +1,5 @@
 .modalpage{
          
-          /* margin: auto; */
-          /* display: flex;
-          align-items: center;
-          justify-content: center; */
-          /* width:100vw; */
-          /* height: 700px; */
-          /* margin: auto; */
-          /* margin: 40px; */
-          /* background-color: #5018AB;  
-                   */
                    margin-bottom: 200px;
 }
 
@@ -64,8 +54,11 @@
 }
 
 .header-section{
-          margin: 0px 30px;
-          /* margin-left: 100px; */
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         /* background-color: yellow; */
+         width: 100%;         /* margin-left: 100px; */
 }
 
 .team-details{
@@ -117,7 +110,7 @@
           margin: auto;
           width: 80%;
           color: white;
-
+          font-size: 18px;
 
 }
 
@@ -180,7 +173,7 @@
 
 }
 
-@media screen and (max-width:512px){
+@media screen and (max-width:612px){
           .header-design{
                     display: none;
           }
@@ -195,7 +188,12 @@
           }
           .other{
                     margin-top: 10px ;
-                    margin-bottom: 10px;
+                    
           }
+
+          .otext{
+                    font-size: medium;
+          }
+
 } 
 

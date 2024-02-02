@@ -2,7 +2,7 @@
 import Events from './components/events/Events';
 import 'swiper/css';
 import Team from './components/team/Team';
-import Countdown from './components/countdown/Countdown';
+// import Countdown from './components/countdown/Countdown';
 import Gallery from './components/gallery/Gallery';
 import Home from './components/Home/Home';
 import About from './components/About/About'
@@ -31,7 +31,7 @@ function Front() {
     <Gallery/>
     <Events/>
     <Team />
-    <Countdown/>
+    {/* <Countdown/> */}
     </>
     )}
     

@@ -74,6 +74,14 @@ const Registration = () => {
         console.log("Server response:", responseText);
         alert("Registration Successful");
         setText("Register")
+        setCollege("")
+        setEmail("")
+        setFemale(false)
+        setMale(false)
+        setSport("")
+        setName("")
+        setPhone("")
+        setState("")
       } else {
         console.error("Error submitting form data:", response.statusText);
         setText("Register")

@@ -11,6 +11,7 @@ export const sports = [
           "Chess(M)",
           "Cricket(F)",
           "Cricket(M)",
+          "Fifa 23 1v1",
           "Football(F)",
           "Football(M)",
           "Futsal(F)",

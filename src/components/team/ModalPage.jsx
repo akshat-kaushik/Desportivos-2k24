@@ -8,7 +8,7 @@ function ModalPage({Head,logo,Name}) {
     <>
     <div className="modalpage">
       {/* <img src='./teams1.png' className='bgimg' alt='bgimg' /> */}
-      <div className='header'>
+      <div  className='header'>
       <div className='header-section'>
             <div className='header-logo'>
                   <div className='teamname'>{`${Name}`}</div>

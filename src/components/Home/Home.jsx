@@ -28,6 +28,11 @@ const Home = () => {
           <img className="object-center h-26 sm:h-32 w-[75%]" src="./images/desportivous.png" alt="despo" />
         </div>
 
+      
+        <img className='md:fixed absolute md:w-[10%] w-[50%]  -translate-x-1/2 -translate-y-1/2 md:left-[45%] left-[35%] top-44 ' src='./Decathlon_logo.png'/>
+        <img className='md:fixed absolute md:w-[9%] w-[30%]  -translate-x-1/2 -translate-y-1/2 md:left-[55%] right-[-10%] top-44 ' src='./liquid_logo1.png'/>
+   
+
 
 
         <img className='hidden md:block h-1/2 w-1/2 relative -translate-x-1/2  left-1/2 -bottom-28' src='./images/realheros.png' />
